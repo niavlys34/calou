@@ -7,7 +7,7 @@ services:
       - TZ=Europe/Paris
       - METEO_JSON_PATH=/data/meteo.json
     volumes:
-      - /home/sylvain/collecte-netatmo/meteo.json
+      - /home/sylvain/collecte-netatmo/meteo.json:/data/meteo.json:ro
     expose:
       - "8000"
     networks:
