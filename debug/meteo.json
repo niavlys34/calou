@@ -1,0 +1,35 @@
+{
+  "Station M\u00e9t\u00e9o": {
+    "reachable": true,
+    "temp": 29.3,
+    "min_temp": 27.3,
+    "date_min_temp": 1786745005,
+    "max_temp": 29.4,
+    "date_max_temp": 1786797973
+  },
+  "Outdoor Module": {
+    "reachable": true,
+    "temp": 36.2,
+    "min_temp": 24.9,
+    "date_min_temp": 1786772240,
+    "max_temp": 36.5,
+    "date_max_temp": 1786800951
+  },
+  "Module Chambre": {
+    "reachable": true,
+    "temp": 30.9,
+    "min_temp": 26.9,
+    "date_min_temp": 1786771618,
+    "max_temp": 30.9,
+    "date_max_temp": 1786801559
+  },
+  "Module Cave": {
+    "reachable": true,
+    "temp": 28.4,
+    "min_temp": 28.2,
+    "date_min_temp": 1786754084,
+    "max_temp": 28.4,
+    "date_max_temp": 1786800380
+  },
+  "updated_at": 1786802402
+}

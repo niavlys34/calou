@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block title %}
+calou: station météo
+{% endblock %}
+{% block body %}
+<h1>Températures</h1>
+<p>Dernière mise à jour : {{ updated_at }}</p>
+<table class="striped">
+    <thead>
+        <tr>
+            <th scope="col">Module</th>
+            <th scope="col">Température actuelle</th>
+            <th scope="col">Minimale</th>
+            <th scope="col">Maximale</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for module in modules %}
+        <tr>
+            <th scope="row">{{ module.name }}</th>
+            <td>{{ module.temp }}°</td>
+            <td>{{ module.min_temp }}° à {{ module.min_temp_time }}</td>
+            <td>{{ module.max_temp }}° à {{ module.max_temp_time }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+</head>
+<body>
+    <!-- Tu regardes le code source petit curieux !
+        Tout est généré côté serveur, rien d'intéressant ici.
+        Mais tu peux aller sur mon github voir les sources :
+            https://github.com/niavlys34/
+     -->
+{% block body %}{% endblock %}
+</body>
+</html>
