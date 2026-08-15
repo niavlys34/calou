@@ -18,7 +18,7 @@ calou: station météo
         {% for module in modules %}
         <tr>
             <th scope="row">{{ module.name }}</th>
-            <td>{{ module.temp }}°</td>
+            <td>{% if module.temp >= 30 %}<mark>{{ module.temp }}°</mark> 🔥{% else %}{{ module.temp }}°{% endif %}</td>
             <td>{{ module.min_temp }}° à {{ module.min_temp_time }}</td>
             <td>{{ module.max_temp }}° à {{ module.max_temp_time }}</td>
         </tr>
