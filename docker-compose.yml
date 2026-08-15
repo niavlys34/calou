@@ -5,6 +5,9 @@ services:
     restart: unless-stopped
     environment:
       - TZ=Europe/Paris
+      - METEO_JSON_PATH=/data/meteo.json
+    volumes:
+      - /home/sylvain/collecte-netatmo/meteo.json
     expose:
       - "8000"
     networks:

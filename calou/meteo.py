@@ -1,15 +1,19 @@
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 from flask import Blueprint, render_template
 
 bp = Blueprint("meteo", __name__)
 
-METEO_JSON = Path(__file__).parent.parent / "debug" / "meteo.json"
+METEO_JSON_PATH = os.environ.get(
+    "METEO_JSON_PATH",
+    Path(__file__).parent.parent / "debug" / "meteo.json",
+)
 
 @bp.route("/")
 def index():
-    with open(METEO_JSON, encoding="utf-8") as f:
+    with open(METEO_JSON_PATH, encoding="utf-8") as f:
         data = json.load(f)
 
     updated_at = data.pop("updated_at")
