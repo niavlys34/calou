@@ -24,14 +24,14 @@ def index():
             "name": name,
             "temp": infos["temp"],
             "min_temp": infos["min_temp"],
-            "min_temp_time": datetime.fromtimestamp(infos["date_min_temp"]).strftime("%H h %M"),
+            "min_temp_time": datetime.fromtimestamp(infos["date_min_temp"]).strftime("%Hh%M"),
             "max_temp": infos["max_temp"],
-            "max_temp_time": datetime.fromtimestamp(infos["date_max_temp"]).strftime("%H h %M"),
+            "max_temp_time": datetime.fromtimestamp(infos["date_max_temp"]).strftime("%Hh%M"),
             "reachable": infos["reachable"],
             })
 
     return render_template(
         "meteo.html",
         modules=modules,
-        updated_at=datetime.fromtimestamp(updated_at).strftime("%d/%m/%Y à %H h %M"),
+        updated_at=datetime.fromtimestamp(updated_at).strftime("%d/%m/%Y à %Hh%M"),
     )
