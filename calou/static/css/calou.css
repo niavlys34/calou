@@ -1,0 +1,23 @@
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*Pour s'adapter à la couleur exacte du fond de l'image du chat*/
+.bg-dark-calou {
+  background-color: #2C3136;
+}
+
+/*Pour le footer*/
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
